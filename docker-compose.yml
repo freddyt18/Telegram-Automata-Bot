@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  db:
+    container_name: mysql_for_automata
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "default"
+      MYSQL_DATABASE: "automata"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      automata_network:
+        aliases:
+          - db
+  app:
+    container_name: telegram_automata
+    image: freddyt18/cadt_cs_gen7_telegram_automata
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - Telegram_Dev=default_value
+      - DATABASE_HOST=db
+      - DATABASE_USER=root
+      - DATABASE_PASS=default
+      - DATABASE_NAME=automata
+    restart: always
+    networks:
+      automata_network:
+
+networks:
+  automata_network:
