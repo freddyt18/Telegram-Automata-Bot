@@ -26,7 +26,7 @@ There are three ways to install and run Automata Telegram Bot:
 
 1. Pull the image from Docker Hub: 
 ```docker
-docker pull freddyt18/cadt_cs_gen7_automata_telegram
+docker pull freddyt18/cadt_cs_gen7_telegram_automata
 ```
 2. Run the image with your bot token and the database credentials as environment variables: 
 ```docker
