@@ -2,7 +2,9 @@
 
 Automata Telegram Bot is a small application that runs entirely within the Telegram app. It allows users to create and manipulate finite automata machines using simple commands. Users can design, edit, delete, and view their own machines, as well as convert them between different types and perform operations on them. For example, users can check if a string belongs to a language recognized by a machine, transform a nondeterministic finite automaton (NFA) into a deterministic one (DFA), or minimize a DFA. Automata Telegram Bot is an educational and fun tool for anyone interested in learning more about finite automata theory and practice.
 
-Watch this video: https://clipchamp.com/watch/NC3j3ON1flp
+- Watch this video: https://clipchamp.com/watch/NC3j3ON1flp
+
+- Bot Usage: https://t.me/automata_cs_gen7_bot
 
 ## Prerequisites
 
