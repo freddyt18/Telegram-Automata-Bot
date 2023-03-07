@@ -94,13 +94,13 @@ To use Automata Telegram Bot, you need to start a conversation with your bot on 
 - `/start` - Start the bot and show the welcome message
 - `/help` - Show the help message with all available commands
 - `/design` - Design and create a new finite automaton
-- `/edit` - Edit existing finite automata
+- `/edit` - Edit existing finite automata - (*Command is still in development*)
 - `/delete` - Delete existing finite automata
 - `/my_machines` - View all designed finite automata
 - `/type` - Check the type of any finite automaton
 - `/check_string` - Check any string's (or multiple) acceptance by one or more finite automata
 - `/nfa_to_dfa` - Convert existing NFA to DFA
-- `/minimize_dfa` - Perform an minimization on the chosen DFA
+- `/minimize_dfa` - Perform a minimization on the chosen DFA
 
 For more details on how to use each command, please refer to the help message.
 
