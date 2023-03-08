@@ -6,6 +6,8 @@ Automata Telegram Bot is a small application that runs entirely within the Teleg
 
 - Bot Usage: https://t.me/automata_cs_gen7_bot
 
+- Technical Report: https://docs.pitou.live/content/63123/technical_report_telegram_automata
+
 ## Prerequisites
 
 To use Automata Telegram Bot, you need to have:
