@@ -34,6 +34,19 @@ db_con = db.DatabaseConnection(
     os.getenv("DATABASE_NAME")
 )
 
+commands = [
+    telebot.types.BotCommand(command="/help", description="List all available commands."),
+    telebot.types.BotCommand(command="/design", description="Design a new Finite Automaton."),
+    telebot.types.BotCommand(command="/my_machines", description="Get all the of your machines."),
+    telebot.types.BotCommand(command="/delete", description="Delete a machine."),
+    telebot.types.BotCommand(command="/type", description="Check the type of a machine."),
+    telebot.types.BotCommand(command="/check_string", description="Check for strings' acceptance against any machines."),
+    telebot.types.BotCommand(command="/nfa_to_dfa", description="Convert any available NFA to an equivalent DFA."),
+    telebot.types.BotCommand(command="/minimize_dfa", description="Design a new Finite Automaton.")
+]
+
+bot.set_my_commands(commands)
+
 # Handle messages
 @bot.message_handler(commands=['hello'])
 def echo_message(message):
